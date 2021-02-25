@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useState, useReducer } from "react";
 import PageTitle from "../../components/layout/PageTitle";
 
 const initialState = {
@@ -13,7 +13,15 @@ function reducer(state, action) {
     case "numberAdd2":
       return { ...state, number: state.number + 2 };
     case "login":
-      return { ...state, user: { name: action.payload } };
+      return { ...state, user: { name: action.payload.name } };
+    case "numberMultBy7":
+      return { ...state, number: state.number * 7 };
+    case "numberDivideBy25":
+      return { ...state, number: state.number / 25 };
+    case "numberParseInt":
+      return { ...state, number: parseInt(state.number) };
+    case "numberAddN":
+      return { ...state, number: state.number + action.payload.number };
     default:
       return state;
   }
@@ -21,6 +29,7 @@ function reducer(state, action) {
 
 const UseReducer = (props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [number, setNumber] = useState(0);
 
   return (
     <div className="UseReducer">
@@ -40,7 +49,9 @@ const UseReducer = (props) => {
         <div>
           <button
             className="btn"
-            onClick={() => dispatch({ type: "login", payload: "Rafael" })}
+            onClick={() =>
+              dispatch({ type: "login", payload: { name: "Rafael" } })
+            }
           >
             Login
           </button>
@@ -49,6 +60,41 @@ const UseReducer = (props) => {
             onClick={() => dispatch({ type: "numberAdd2" })}
           >
             +2
+          </button>
+          <button
+            className="btn"
+            onClick={() => dispatch({ type: "numberMultBy7" })}
+          >
+            *7
+          </button>
+          <button
+            className="btn"
+            onClick={() => dispatch({ type: "numberDivideBy25" })}
+          >
+            /25
+          </button>
+          <button
+            className="btn"
+            onClick={() => dispatch({ type: "numberParseInt" })}
+          >
+            parseInt
+          </button>
+          <input
+            type="number"
+            className="input"
+            value={number}
+            onChange={(e) => setNumber(e.target.value)}
+          />
+          <button
+            className="btn"
+            onClick={() =>
+              dispatch({
+                type: "numberAddN",
+                payload: { number: parseInt(number) }
+              })
+            }
+          >
+            +{number}
           </button>
         </div>
       </div>
