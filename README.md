@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+<p align="center">
+  <img alt="React Hooks Training" src=".github/banner.svg" width="400px"/>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/rafaelfachinelli/react-hooks-training?color=3498db&style=for-the-badge">
+  <img alt="Last commit" src="https://img.shields.io/github/last-commit/rafaelfachinelli/react-hooks-training?color=3498db&style=for-the-badge">
+  <a href="https://rafaelfachinelli.com">
+    <img alt="Developed by Rafael Fachinelli" src="https://img.shields.io/badge/Developer-Rafael_Fachinelli-3498db?style=for-the-badge">
+  </a>
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-3498db?style=for-the-badge">
+</p>
 
-## Available Scripts
+<p align="center">
+  <a href="#information_source-about">About</a> •
+  <a href="#memo-tasks">Tasks</a> •
+  <a href="#arrow_forward-run">Run</a> •
+  <a href="#hammer_and_wrench-technologies">Technologies</a> •
+  <a href="#boy-author">Author</a> •
+  <a href="#balance_scale-license">License</a>
+</p>
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+## :information_source: About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+⚓ One page per React hook, each with a small interactive example: `useState`, `useEffect`, `useRef`, `useMemo`, `useCallback`, `useContext`, `useReducer` and a custom hook. A side menu with React Router moves between the pages.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Built in 2021 to practice the hooks introduced in React 16.8.
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :memo: Tasks
 
-### `yarn build`
+<div align="center">
+<details>
+<summary>Click to view</summary>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+|State|Task|
+|:---:|:---|
+|:heavy_check_mark:|Layout with menu, content and page title|
+|:heavy_check_mark:|Routes with React Router|
+|:heavy_check_mark:|useState|
+|:heavy_check_mark:|useEffect|
+|:heavy_check_mark:|useRef|
+|:heavy_check_mark:|useMemo|
+|:heavy_check_mark:|useCallback|
+|:heavy_check_mark:|useContext|
+|:heavy_check_mark:|useReducer|
+|:heavy_check_mark:|Custom hook|
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+</details>
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `yarn eject`
+## :arrow_forward: Run
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You need [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/). In the project folder:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Install dependencies
+yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Start the development server
+yarn start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> The app opens at <http://localhost:3000>.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## :hammer_and_wrench: Technologies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<div align="center">
 
-### Code Splitting
+|Web|
+|:---:|
+|[React](https://react.dev/)|
+|[React Hooks](https://react.dev/reference/react/hooks)|
+|[React Router](https://reactrouter.com/)|
+|[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)|
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+</div>
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## :boy: Author
 
-### Making a Progressive Web App
+<div align="center">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<a href="https://rafaelfachinelli.com">
+  <img src="https://github.com/rafaelfachinelli.png" width="100px" alt="Rafael Fachinelli"/>
+  <br/>
+  <sub><b>Rafael Fachinelli</b></sub>
+</a>
 
-### Advanced Configuration
+Tech Lead and software engineer. Get in touch!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[![Portfolio](https://img.shields.io/badge/-rafaelfachinelli.com-3498db?style=flat-square&logo=googlechrome&logoColor=white)](https://rafaelfachinelli.com)
+[![LinkedIn](https://img.shields.io/badge/-Rafael_Fachinelli-0a66c2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rafaelfachinelli/)
+[![GitHub](https://img.shields.io/badge/-rafaelfachinelli-000?style=flat-square&logo=github&logoColor=white)](https://github.com/rafaelfachinelli)
+[![E-mail](https://img.shields.io/badge/-rafael.l.a.fachinelli@gmail.com-ea4335?style=flat-square&logo=gmail&logoColor=white)](mailto:rafael.l.a.fachinelli@gmail.com)
 
-### Deployment
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `yarn build` fails to minify
+## :balance_scale: License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is under the [MIT license](./LICENSE).
